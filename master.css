@@ -1,0 +1,361 @@
+/* 전 항목 공통 */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+.head{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+.head2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background: #fff;
+}
+.head3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+.head_1{
+    width: 100%;
+    max-width: 1920px;
+    min-width: 1500px;
+}
+
+/* intro */
+.intro_logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+
+}
+.intro_l_1{
+    width: 90%;
+    display: flex;
+    justify-content: start;
+}
+.intro_l_2{
+    width: 163px;
+    object-fit: contain;
+    margin-top: 34px;
+}
+
+.intro1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.intro1_c1{
+    width: 82%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.intro_text{
+    max-width: 712px;
+    width: 100%;
+    position: absolute;
+    top: 29%;
+}
+.intro1_c2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 5%;
+}
+.intro1_1{
+    width: 100%;
+    max-width: 416px;
+    object-fit: contain;
+}
+.intro1 a {
+    display: flex;
+    justify-content: center;
+    margin-top: 31px;
+    width: 174px;
+}
+.intro_bt1{
+    width: 174px;
+    height: 42px;
+    border: solid 2px #fff;
+    border-radius: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    transition: 0.5s;
+}
+
+.intro_bt1_1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.in_bt_1{
+    width: 131px;
+    height: 37px;
+    position: absolute;
+    opacity: 1;
+    transition: 0.5s;
+}
+.in_bt_2{
+    width: 131px;
+    height: 37px;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(100%);
+}
+.intro_ch{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: visible;
+    text-align: right;
+    transform: translateY(-27px);
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.5s;
+}
+.intro_ch_1{
+    object-fit: contain;
+    width: 58px;
+    transform: translateY(30%) rotate(26deg);
+    transition: 0.5s;
+}
+
+
+
+.intro_bt1:hover{
+    background-color: #fff;
+}
+.intro_bt1:hover > .intro_bt1_1 > .in_bt_1{
+    opacity: 0;
+    transform: translateY(-100%);
+}
+.intro_bt1:hover > .intro_bt1_1 > .in_bt_2{
+    opacity: 1;
+    transform: translateY(0%);
+}
+.intro_bt1:hover > .intro_ch{
+    opacity: 1;
+}
+.intro_bt1:hover > .intro_ch > .intro_ch_1{
+    transform: translateY(0) rotate(0deg);
+}
+
+
+
+/* cursor event */
+#cursorEffect {
+    position: fixed;
+    width: 70px;
+    object-fit: contain;
+    pointer-events: none; /* 클릭 방해 X */
+    top: 0;
+    left: 0;
+    /* transform: translate(-50%, -50%); */
+    z-index: 9999;
+}
+
+
+
+
+
+.main{
+    width: 100%;
+    height: 100vh;
+    border-radius: 0px 0px 98px 98px;
+    position: relative;
+    overflow: hidden;
+}
+
+.main iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 100vw;
+    height: 56.25vw; /* 9 / 16 */
+
+    min-width: 177.77vh;
+    min-height: 100vh;
+
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    
+}
+
+.main_1{
+    width: 70%;
+    max-width: 1386px;
+    min-width: 1000px;
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 570px;
+}
+.main_1_1{
+    width: 100%;
+}
+
+
+.main2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.main_2_1{
+    width: 100%;
+    max-width: 1920px;
+}
+
+.main3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #f3f4f4;
+}
+
+.main4{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #1a1918;
+}
+
+
+
+.sub1{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    z-index: -1;
+    filter: brightness(50%);
+}
+.sub1 iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 100vw;
+    height: 56.25vw; /* 9 / 16 */
+
+    min-width: 177.77vh;
+    min-height: 100vh;
+
+    transform: translate(-50%, -50%);
+    pointer-events: none;   
+}
+
+
+
+.sub2{
+    width: 100%;
+    display: flex;
+}
+.sub2_left{
+    width: 34%;
+    display: flex;
+    justify-content: right;
+}
+.sub2_left_1{
+    width: 100%;
+    max-width: 656px;
+}
+.sub2_right{
+    width: 66%;
+}
+.right_bg_1{
+    width: 100%;
+    background-color: #f3f4f4;
+}
+.sub2_right_1{
+    width: 100%;
+    max-width: 1263px;
+}
+.right_bg_2{
+    width: 100%;
+    background-color: #fff;
+}
+
+
+
+/* sub */
+.sub_page1{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+.sub_page1_1{
+    width: 100%;
+    min-width: 400px;
+    object-fit: contain;
+}
+
+
+/* 인트로 */
+.bg-video-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    filter: brightness(1);
+    z-index: -1;
+}
+.bg-video-wrap video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bg-video-wrap-1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 34%;
+    height: 100%;
+    overflow: hidden;
+    filter: brightness(0.7);
+    z-index: -1;
+}
+.bg-video-wrap-1 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
